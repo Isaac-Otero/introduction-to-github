@@ -10,9 +10,10 @@ if grep --extended-regexp "$SEARCH" -- $FILE
 then
   echo "Found $SEARCH in $FILE"
 else
+  _underscore_
   echo "Missing $SEARCH in $FILE"
   echo "----------------"
   echo "$(cat $FILE)"
   exit 204  # We're sending a weird code so it looks different from other "failures"
-  _underscore_
+
 fi
