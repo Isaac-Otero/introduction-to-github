@@ -14,4 +14,5 @@ else
   echo "----------------"
   echo "$(cat $FILE)"
   exit 204  # We're sending a weird code so it looks different from other "failures"
+  _underscore_
 fi
